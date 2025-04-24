@@ -1,0 +1,39 @@
+.header {
+    padding: 25px 0;
+}
+
+.logo {
+    width: 110px;
+}
+
+.link, .responsive-link {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--yo-dark-gray);
+    text-transform: uppercase;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.link:hover, .responsive-link:hover {
+    color: var(--yo-dark-green);
+}
+
+.fa-bars {
+    font-size: 3.4em;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+    color: var(--yo-green);
+    transform: rotate(90deg);
+}
+
+.responsive-nav {
+    margin-top: 20px;
+}
+
+.responsive-link {
+    font-size: 1.4em;
+}
