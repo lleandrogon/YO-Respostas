@@ -1,0 +1,54 @@
+.register-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--yo-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    background-color: var(--yo-white);
+    width: 400px;
+    padding: 30px 40px;
+    box-shadow: 0 2px 8px var(--yo-black);
+    border-radius: 25px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--yo-dark-green);
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.register-button {
+    background-color: var(--yo-dark-green);
+    color: var(--yo-white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px var(--yo-green);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login {
+    color: var(--yo-black);
+}
+
+.login:hover {
+    color: var(--yo-green);
+}

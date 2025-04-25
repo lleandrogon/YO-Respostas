@@ -1,0 +1,14 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.search-button {
+    border: none;
+    background-color: var(--yo-dark-green);
+}
+
+.fa-magnifying-glass {
+    color: var(--yo-white);
+}

@@ -1,12 +1,13 @@
 .header {
-    padding: 25px 0;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px var(--yo-gray);
 }
 
 .logo {
-    width: 110px;
+    width: 80px;
 }
 
-.link, .responsive-link {
+.link, .responsive-link, .li-button {
     font-size: 1.2em;
     font-weight: 500;
     color: var(--yo-dark-gray);
@@ -19,8 +20,13 @@
     color: var(--yo-dark-green);
 }
 
+.link-button {
+    border: none;
+    background-color: transparent;
+}
+
 .fa-bars {
-    font-size: 3.4em;
+    font-size: 3em;
     transition: color 0.3s, transform 0.3s ease;
 }
 
@@ -36,4 +42,8 @@
 
 .responsive-link {
     font-size: 1.4em;
+}
+
+.exit-container {
+    margin-top: 15px;
 }

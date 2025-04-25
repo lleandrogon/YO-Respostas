@@ -1,16 +1,16 @@
 .auth-container {
     height: 100vh;
     width: 100%;
-    background-color: #e7e7e7;
+    background-color: var(--yo-light-gray);
 }
 
 .auth {
-    border: 2px solid var(--yo-black);
-    width: 490px;
+    height: 450px;
+    box-shadow: 0 2px 8px var(--yo-black);
 }
 
 .login, .register {
-    padding: 20px 25px;
+    padding: 30px 30px;
 }
 
 .login {
@@ -22,12 +22,23 @@
     margin-bottom: 25px;
 }
 
-.form-label {
-    text-align: left;
+.login-title, .register-title {
+    font-size: 2.3em;
+}
+
+.login-button {
+    background-color: var(--yo-dark-green);
+    color: var(--yo-white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px var(--yo-green);
 }
 
 .register {
-    background: linear-gradient(135deg, var(--yo-green), var(--yo-dark-green));
+    background: linear-gradient(135deg, var(--yo-light-green), var(--yo-dark-green));
     color: var(--yo-white);
 }
 
@@ -42,19 +53,25 @@
     margin-bottom: 25px;
 }
 
-.button {
+.register-button {
     background-color: var(--yo-white);
     color: var(--yo-dark-green);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.button:hover {
+.register-button:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 12px var(--yo-green);
 }
 
 @media (min-width: 768px) {
     .auth {
-        width: 720px;
+        width: 740px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .auth {
+        width: 900px;
     }
 }

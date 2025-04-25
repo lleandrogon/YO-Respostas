@@ -1,8 +1,13 @@
+/* CSS Global */
+
 :root {
+    --yo-light-green: #a7dfdc;
     --yo-green: #51D0C9;
     --yo-dark-green: #0F958C;
+    --yo-light-gray: #f5f5f5;
     --yo-gray: #5D5D5D;
     --yo-dark-gray: #222220;
+    --yo-red: #ca0000;
     --yo-white: #ffffff;
     --yo-black: #000000;
 }
@@ -26,12 +31,26 @@
 .form-control {
     padding: 10px;
     border-radius: 20px;
+    background-color: var(--yo-light-gray);
+}
+
+.form-control:focus {
+    outline: none;
+    background-color: var(--yo-light-gray);
+    box-shadow: 0 2px 8px var(--yo-green);
+}
+
+.error {
+    color: var(--yo-red);
+    text-align: center;
+    margin-top: 10px;
 }
 
 .button {
     font-size: 1.2em;
     font-weight: 500;
-    padding: 6px 12px;
+    text-transform: uppercase;
+    padding: 6px 25px;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
 }
