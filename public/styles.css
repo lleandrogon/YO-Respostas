@@ -54,3 +54,32 @@
     border: none;
     border-radius: 20px;
 }
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.fa-arrow-left {
+    background-color: var(--yo-dark-green);
+    padding: 10px 11px;
+    border-radius: 25px;
+    font-size: 1.3em;
+    color: var(--yo-white);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fa-arrow-left:hover {
+    transform: scale(1.1);
+    background-color: var(--yo-green);
+}
+
+.link-question {
+    color: var(--yo-black);
+}
+
+.link-question:hover {
+    color: var(--yo-dark-green);
+}

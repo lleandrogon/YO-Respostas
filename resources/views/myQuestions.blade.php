@@ -1,27 +1,25 @@
 @extends('structure.structure')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('main/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('myQuestions/myQuestions.css') }}">
 @endsection
 
 @section('content')
     @include('structure.header')
 
-    <div class="search-container">
-        <form action="" method="POST">
-            <input type="text" class="search-input"><button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+    <div class="arrow-container">
+        <a href="{{ route('main') }}"><i class="fa-solid fa-arrow-left"></i></a>
     </div>
 
-    <div class="question-container">
+    <div class="questions-container">
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th><h3>YO-Perguntas</h3></th>
+                    <th><h2 class="mb-4">Minhas Perguntas</h2></th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($questions as $question)
+                @foreach($questions as $question)
                     <tr>
                         <td><a href="{{ route('question.show', $question->id) }}" class="link-question no-underline">{{ $question->title }}</a></td>
                     </tr>

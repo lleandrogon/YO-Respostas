@@ -1,0 +1,12 @@
+.questions-container {
+    display: flex;
+    justify-content: center;
+}
+
+.questions-container table {
+    text-align: center;
+}
+
+tbody {
+    font-size: 1.1em;
+}
