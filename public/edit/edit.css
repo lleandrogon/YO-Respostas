@@ -1,0 +1,33 @@
+.create-container {
+    display: flex;
+    justify-content: center;
+}
+
+.create-container form {
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 2px 8px var(--yo-black);
+    width: 70%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button {
+    background-color: var(--yo-dark-green);
+    color: var(--yo-white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px var(--yo-green);
+}

@@ -17,9 +17,15 @@
             <h2 class="title">Faça sua pergunta!</h2>
             <div class="mb-3">
                 <input type="text" class="form-control" name="title" placeholder="Título da pergunta">
+                @error('title')
+                    <div class="error">{{ $message }}</div>
+                @enderror
             </div>
             <div class="mb-3">
                 <textarea class="form-control" name="body" rows="7" placeholder="Descreva sua pergunta de forma clara!"></textarea>
+                @error('body')
+                    <div class="error">{{ $message }}</div>
+                @enderror
             </div>
             <div class="button-container">
                 <button class="button" type="submit">Perguntar</button>
